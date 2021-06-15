@@ -31,6 +31,7 @@ body {
 }
 
 .container .logo {
+  margin-top: 50px;
   margin-right: auto;
 }
 
@@ -85,6 +86,7 @@ body {
 }
 
 .container .social-media {
+  margin-bottom: 50px;
   margin-top: 128px;
   display: -webkit-box;
   display: -ms-flexbox;
