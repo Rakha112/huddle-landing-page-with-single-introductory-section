@@ -11,11 +11,93 @@ $Soft-Magenta: hsl(300, 69%, 71%);
 }
 
 body {
+    background-image: url("../images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
     background-color: $Violet;
 }
 
 .container {
+    padding: 0 74px 0 76px;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
     justify-content: center;
     align-items: center;
+    .logo {
+        margin-right: auto;
+    }
+    .gambar {
+        margin: 100px 0;
+        img {
+            width: 592px;
+            height: 419px;
+        }
+        
+    }
+    .content {
+        display: grid;
+        h1 {
+            font-weight: 600;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            font-size: 46px;
+            margin-bottom: 40px;
+        }
+        p { 
+            line-height: 1.5;
+            font-size: 32px;
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+            color: white;
+            margin-bottom: 52px;
+        }
+        a {
+            border-radius: 50px;
+            background-color: white;
+            padding: 22px 130px;
+            margin: auto;
+            font-size: 26px;
+            font-weight: 400;
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+            color: $Violet;
+            transition: all 0.1s ease;
+        }
+        a:hover {
+            background-color: $Soft-Magenta;
+            color: white;
+        }
+    }
+    .social-media {
+        margin-top: 128px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        a {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: white;
+            border: 2px white solid;
+            border-radius: 50%;
+            transition: all 0.1s ease;
+        }
+        .twitter {
+            margin: 0 20px;
+        }
+        a:hover {
+            border: 2px $Soft-Magenta solid;
+            color: $Soft-Magenta;
+        }
+    }
 }
