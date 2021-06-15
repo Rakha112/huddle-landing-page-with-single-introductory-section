@@ -39,8 +39,7 @@ body {
 }
 
 .container .gambar img {
-  width: 592px;
-  height: 419px;
+  width: 100%;
 }
 
 .container .content {
