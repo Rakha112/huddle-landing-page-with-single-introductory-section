@@ -11,13 +11,17 @@ $Soft-Magenta: hsl(300, 69%, 71%);
 }
 
 body {
-    background-image: url("../images/bg-mobile.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
+    
     background-color: $Violet;
 }
 
 .container {
+    @media screen and (min-width: 1000px) {
+        background-image: url("../images/bg-desktop.svg");
+    }
+    background-image: url("../images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
     padding: 0 74px 0 76px;
     display: flex;
     flex-direction: column;
@@ -25,52 +29,99 @@ body {
     justify-content: center;
     align-items: center;
     .logo {
+        @media screen and (min-width: 1000px) {
+            img {
+                width: 220px;
+            }
+        }
         margin-top: 50px;
         margin-right: auto;
     }
-    .gambar {
-        margin: 100px 0;
-        img {
-            width: 100%;
-        }
-        
-    }
+    
     .content {
+        @media screen and (min-width: 1000px) {
+            display: grid;
+            gap: 60px;
+            grid-template-columns: 1.5fr 1fr;
+            margin-top: 80px;
+        }
         display: grid;
-        h1 {
-            font-weight: 600;
-            text-align: center;
-            font-family: 'Poppins', sans-serif;
-            color: white;
-            font-size: 46px;
+        .gambar {
+            @media screen and (min-width: 1000px) {
+                margin: auto;
+            }
+            margin: 100px 0;
+            img {
+                width: 100%;
+            }
+            
+        }
+        .isi {
+            display: grid;
+            @media screen and (min-width: 1000px) {
+                // display: block;
+                // margin: auto;
+                margin-top: 50px;
+                margin-bottom: auto;
+            }
+            h1 {
+                @media screen and (min-width: 1000px) {
+                    text-align: left;
+                    font-size: 38px;
+                    margin-bottom: 20px;
+                }
+                font-weight: 600;
+                text-align: center;
+                font-family: 'Poppins', sans-serif;
+                color: white;
+                font-size: 46px;
+                margin-bottom: 40px;
+            }
+            p { 
+                @media screen and (min-width: 1000px) {
+                    text-align: left;
+                    font-size: 17px;
+                    margin-bottom: 30px;
+                }
+                line-height: 1.5;
+                font-size: 32px;
+                text-align: center;
+                font-family: 'Open Sans', sans-serif;
+                color: white;
+                margin-bottom: 52px;
+            }
+            a {
+                @media screen and (min-width: 1000px) {
+                    margin: 0;
+                    margin-right: auto;
+                    font-size: 17px;
+                    padding: 14px 65px;
+                }
+                box-shadow: 5px 10px 10px hsla(0, 0, 0, 0.2);
+                border-radius: 50px;
+                background-color: white;
+                padding: 22px 130px;
+                margin: auto;
+                font-size: 26px;
+                font-weight: 400;
+                font-family: 'Poppins', sans-serif;
+                text-decoration: none;
+                color: $Violet;
+                transition: all 0.1s ease;
+            }
+            a:hover {
+                background-color: $Soft-Magenta;
+                color: white;
+            }
+        }
+    
+        }
+    .social-media {
+        @media screen and (min-width: 1000px) {
+            margin: auto 0;
+            margin-left: auto;
             margin-bottom: 40px;
         }
-        p { 
-            line-height: 1.5;
-            font-size: 32px;
-            text-align: center;
-            font-family: 'Open Sans', sans-serif;
-            color: white;
-            margin-bottom: 52px;
-        }
-        a {
-            border-radius: 50px;
-            background-color: white;
-            padding: 22px 130px;
-            margin: auto;
-            font-size: 26px;
-            font-weight: 400;
-            font-family: 'Poppins', sans-serif;
-            text-decoration: none;
-            color: $Violet;
-            transition: all 0.1s ease;
-        }
-        a:hover {
-            background-color: $Soft-Magenta;
-            color: white;
-        }
-    }
-    .social-media {
         margin-bottom: 50px;
         margin-top: 128px;
         display: flex;
@@ -80,6 +131,11 @@ body {
         margin-left: auto;
         margin-right: auto;
         a {
+            @media screen and (min-width: 1000px) {
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -94,6 +150,9 @@ body {
             transition: all 0.1s ease;
         }
         .twitter {
+            @media screen and (min-width: 1000px) {
+                margin: 0 16px;
+            }
             margin: 0 20px;
         }
         a:hover {
@@ -102,3 +161,4 @@ body {
         }
     }
 }
+
