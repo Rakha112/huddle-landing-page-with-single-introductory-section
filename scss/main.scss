@@ -4,3 +4,18 @@ $Soft-Magenta: hsl(300, 69%, 71%);
 // font-family: 'Open Sans', sans-serif;
 
 // font-family: 'Poppins', sans-serif;
+* {
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $Violet;
+}
+
+.container {
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
